@@ -1,26 +1,21 @@
-from transformers import T5Tokenizer, T5ForConditionalGeneration
+from datasets import load_dataset, DatasetDict
 
-# Load the fine-tuned model and tokenizer
-model_dir = "./model/t5-small-squadv2-final"
-tokenizer = T5Tokenizer.from_pretrained(model_dir)
-model = T5ForConditionalGeneration.from_pretrained(model_dir)
-model.eval()
+# Load the full dataset and store cache in a custom folder
+squad_v2 = load_dataset("squad_v2", cache_dir="./data/download")
 
-print("T5 QA Model Ready. Type 'exit' to quit.\n")
+# Shuffle and reduce to 10,000 samples from the 'train' split
+small_dataset = squad_v2["train"].shuffle(seed=42).select(range(10000))
 
-while True:
-    # Get user input
-    context = input("Enter context: ").strip()
-    if context.lower() == "exit":
-        break
+# Split into train, validation, test
+split_dataset = small_dataset.train_test_split(test_size=0.2, seed=42)
+val_test = split_dataset['test'].train_test_split(test_size=0.5, seed=42)
 
-    # Prepare input text
-    input_text = f"generate question and answer: {context}"
-    input_ids = tokenizer.encode(input_text, return_tensors="pt")
+dataset = DatasetDict({
+    'train': split_dataset['train'],
+    'validation': val_test['train'],
+    'test': val_test['test']
+})
 
-    # Generate output
-    output_ids = model.generate(input_ids, max_length=100, num_beams=4, early_stopping=True)
-    output = tokenizer.decode(output_ids[0], skip_special_tokens=True)
-
-    # Display the generated question and answer
-    print(f"Generated Output: {output}\n")
+# Save processed dataset to a custom folder
+output_folder = "./data/dataset/small_squad_v2"
+dataset.save_to_disk(output_folder)
