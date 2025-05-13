@@ -1,0 +1,43 @@
+{'loss': 2.1087, 'grad_norm': 1.250882625579834, 'learning_rate': 0.00029059999999999996, 'epoch': 0.1}
+{'loss': 0.3457, 'grad_norm': 1.1595278978347778, 'learning_rate': 0.0002806, 'epoch': 0.2}
+{'loss': 0.3173, 'grad_norm': 1.531011700630188, 'learning_rate': 0.00027059999999999996, 'epoch': 0.3}
+{'eval_loss': 0.2890065908432007, 'eval_runtime': 10.4809, 'eval_samples_per_second': 95.411, 'eval_steps_per_second': 11.926, 'epoch': 0.3}
+ 10%|███████▉                                                                       | 300/3000 [01:58<16:08,  2.79it/s]F:\Projects\ModelTraining\env\Lib\site-packages\transformers\modeling_utils.py:3339: UserWarning: Moving the following attributes in the config to the generation config: {'early_stopping': True, 'num_beams': 4, 'no_repeat_ngram_size': 3, 'forced_bos_token_id': 0}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+{'loss': 0.3166, 'grad_norm': 0.7571440935134888, 'learning_rate': 0.0002606, 'epoch': 0.4}
+{'loss': 0.3019, 'grad_norm': 2.075043201446533, 'learning_rate': 0.00025059999999999997, 'epoch': 0.5}
+{'loss': 0.3152, 'grad_norm': 1.5203455686569214, 'learning_rate': 0.0002406, 'epoch': 0.6}
+{'eval_loss': 0.272030770778656, 'eval_runtime': 10.512, 'eval_samples_per_second': 95.129, 'eval_steps_per_second': 11.891, 'epoch': 0.6}
+{'loss': 0.2993, 'grad_norm': 1.5810338258743286, 'learning_rate': 0.0002306, 'epoch': 0.7}
+{'loss': 0.2988, 'grad_norm': 1.4146349430084229, 'learning_rate': 0.00022059999999999997, 'epoch': 0.8}
+{'loss': 0.2888, 'grad_norm': 1.694451093673706, 'learning_rate': 0.00021059999999999997, 'epoch': 0.9}
+{'eval_loss': 0.25919604301452637, 'eval_runtime': 10.6242, 'eval_samples_per_second': 94.124, 'eval_steps_per_second': 11.766, 'epoch': 0.9}
+{'loss': 0.2667, 'grad_norm': 1.9560705423355103, 'learning_rate': 0.00020059999999999997, 'epoch': 1.0}
+{'loss': 0.2277, 'grad_norm': 0.7180538773536682, 'learning_rate': 0.00019059999999999997, 'epoch': 1.1}
+{'loss': 0.2058, 'grad_norm': 2.0622735023498535, 'learning_rate': 0.00018059999999999997, 'epoch': 1.2}
+{'eval_loss': 0.25538310408592224, 'eval_runtime': 10.5511, 'eval_samples_per_second': 94.777, 'eval_steps_per_second': 11.847, 'epoch': 1.2}
+{'loss': 0.2073, 'grad_norm': 1.0920461416244507, 'learning_rate': 0.00017059999999999997, 'epoch': 1.3}
+{'loss': 0.2041, 'grad_norm': 1.135901927947998, 'learning_rate': 0.00016059999999999997, 'epoch': 1.4}
+{'loss': 0.2052, 'grad_norm': 1.190176010131836, 'learning_rate': 0.00015059999999999997, 'epoch': 1.5}
+{'eval_loss': 0.24723154306411743, 'eval_runtime': 10.5696, 'eval_samples_per_second': 94.611, 'eval_steps_per_second': 11.826, 'epoch': 1.5}
+{'loss': 0.1932, 'grad_norm': 1.2249362468719482, 'learning_rate': 0.0001406, 'epoch': 1.6}
+{'loss': 0.1967, 'grad_norm': 1.3852003812789917, 'learning_rate': 0.0001306, 'epoch': 1.7}
+{'loss': 0.192, 'grad_norm': 0.9167302250862122, 'learning_rate': 0.00012059999999999999, 'epoch': 1.8}
+{'eval_loss': 0.23229140043258667, 'eval_runtime': 10.7243, 'eval_samples_per_second': 93.246, 'eval_steps_per_second': 11.656, 'epoch': 1.8}
+{'loss': 0.2182, 'grad_norm': 0.9228014349937439, 'learning_rate': 0.00011059999999999998, 'epoch': 1.9}
+{'loss': 0.1921, 'grad_norm': 1.277463436126709, 'learning_rate': 0.00010059999999999999, 'epoch': 2.0}
+{'loss': 0.1299, 'grad_norm': 1.0460762977600098, 'learning_rate': 9.059999999999999e-05, 'epoch': 2.1}
+{'eval_loss': 0.23512551188468933, 'eval_runtime': 10.7935, 'eval_samples_per_second': 92.648, 'eval_steps_per_second': 11.581, 'epoch': 2.1}
+{'loss': 0.1239, 'grad_norm': 0.8969686627388, 'learning_rate': 8.06e-05, 'epoch': 2.2}
+{'loss': 0.1277, 'grad_norm': 3.392355442047119, 'learning_rate': 7.06e-05, 'epoch': 2.3}
+{'loss': 0.1307, 'grad_norm': 0.8355369567871094, 'learning_rate': 6.0599999999999996e-05, 'epoch': 2.4}
+{'eval_loss': 0.2308645099401474, 'eval_runtime': 11.0202, 'eval_samples_per_second': 90.742, 'eval_steps_per_second': 11.343, 'epoch': 2.4}
+{'loss': 0.1239, 'grad_norm': 0.6879070997238159, 'learning_rate': 5.06e-05, 'epoch': 2.5}
+{'loss': 0.1167, 'grad_norm': 0.7509722113609314, 'learning_rate': 4.06e-05, 'epoch': 2.6}
+{'loss': 0.1095, 'grad_norm': 0.9133633971214294, 'learning_rate': 3.06e-05, 'epoch': 2.7}
+{'eval_loss': 0.22659429907798767, 'eval_runtime': 10.9332, 'eval_samples_per_second': 91.465, 'eval_steps_per_second': 11.433, 'epoch': 2.7}
+{'loss': 0.1204, 'grad_norm': 0.6691572666168213, 'learning_rate': 2.06e-05, 'epoch': 2.8}
+{'loss': 0.1112, 'grad_norm': 0.8304159641265869, 'learning_rate': 1.06e-05, 'epoch': 2.9}
+{'loss': 0.1188, 'grad_norm': 0.9380635023117065, 'learning_rate': 6e-07, 'epoch': 3.0}
+{'eval_loss': 0.22273138165473938, 'eval_runtime': 10.8273, 'eval_samples_per_second': 92.359, 'eval_steps_per_second': 11.545, 'epoch': 3.0}
+{'train_runtime': 1205.8098, 'train_samples_per_second': 19.904, 'train_steps_per_second': 2.488, 'train_loss': 0.27046275742848713, 'epoch': 3.0}
