@@ -1,5 +1,9 @@
 from transformers import T5Tokenizer, T5ForConditionalGeneration, Seq2SeqTrainer, Seq2SeqTrainingArguments
 from datasets import load_from_disk
+import torch
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"Using device: {device}")
 
 # Load preprocessed dataset (with 'input_text' and 'target_text' fields)
 preprocessed_dataset = load_from_disk("./data/preprocessed_small_squad_v2")
@@ -32,6 +36,8 @@ training_args = Seq2SeqTrainingArguments(
     logging_steps=100,
     predict_with_generate=True,
     save_total_limit=3,
+    no_cuda=False,
+    fp16=True,
 )
 
 trainer = Seq2SeqTrainer(
