@@ -90,15 +90,6 @@ results = {
 
 # Print results
 print("\n--- Evaluation Metrics (Answers) ---")
-# for key, value in results.items():
-#     if isinstance(value, dict):
-#         for subkey, subval in value.items():
-#             if isinstance(subval, (list, np.ndarray)):
-#                 print(f"{key} - {subkey}: {np.mean(subval):.4f}")
-#             else:
-#                 print(f"{key} - {subkey}: {subval:.4f}")
-#     else:
-#         print(f"{key}: {value:.4f}")
 
 for key, value in results.items():
     if isinstance(value, dict):
